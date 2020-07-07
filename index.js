@@ -19,7 +19,8 @@ var defaults = {
   replace: true,
   landscape: false,
   landscapeUnit: 'vw',
-  landscapeWidth: 568
+  landscapeWidth: 568,
+  api_multiplier: 1
 };
 
 var ignoreNextComment = 'px-to-viewport-ignore-next';
@@ -153,7 +154,7 @@ function createPxReplace(opts, viewportUnit, viewportSize) {
     if (!$1) return m;
     var pixels = parseFloat($1);
     if (pixels <= opts.minPixelValue) return m;
-    var parsedVal = toFixed((pixels / viewportSize * 100), opts.unitPrecision);
+    var parsedVal = toFixed((pixels / viewportSize * 100), opts.unitPrecision, opts.api_multiplier);
     return parsedVal === 0 ? '0' : parsedVal + viewportUnit;
   };
 }
@@ -179,9 +180,9 @@ function checkRegExpOrArray(options, optionName) {
   throw new Error('options.' + optionName + ' should be RegExp or Array of RegExp.');
 }
 
-function toFixed(number, precision) {
+function toFixed(number, precision, api_multiplier) {
   var multiplier = Math.pow(10, precision + 1),
-    wholeNumber = Math.floor(number * multiplier);
+    wholeNumber = Math.floor(number * api_multiplier * multiplier);
   return Math.round(wholeNumber / 10) * 10 / multiplier;
 }
 
