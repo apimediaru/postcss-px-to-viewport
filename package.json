@@ -1,7 +1,7 @@
 {
   "name": "@apimediaru/postcss-px-to-viewport",
   "description": "A CSS post-processor that converts px to viewport units (vw, vh, vmin, vmax).",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "author": "API Media <it@apimedia.ru>",
   "license": "MIT",
   "repository": {
