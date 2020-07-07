@@ -74,12 +74,9 @@ If your project involves a fixed width, this script will help to convert pixels 
 ### Installation
 Add via npm
 ```
-$ npm install postcss-px-to-viewport --save-dev
+$ npm install @apimediaru/postcss-px-to-viewport --save-dev
 ```
-or yarn
-```
-$ yarn add -D postcss-px-to-viewport
-```
+
 
 ### Usage
 
@@ -100,7 +97,9 @@ Default Options:
   include: undefined,
   landscape: false,
   landscapeUnit: 'vw',
-  landscapeWidth: 568
+  landscapeWidth: 568,
+  
+  api_multiplier: 1
 }
 ```
 - `unitToConvert` (String) unit to convert, by default, it is px.
