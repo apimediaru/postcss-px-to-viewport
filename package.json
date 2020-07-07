@@ -2,14 +2,14 @@
   "name": "postcss-px-to-viewport",
   "description": "A CSS post-processor that converts px to viewport units (vw, vh, vmin, vmax).",
   "version": "1.1.1",
-  "author": "API Media <it@apimedia.ru>",
+  "author": "Dmitry Karpunin <koderfunk@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:apimediaru/postcss-px-to-viewport.git"
+    "url": "git@github.com:evrone/postcss-px-to-viewport.git"
   },
-  "bugs": "https://github.com/apimediaru/postcss-px-to-viewport/issues",
-  "homepage": "https://github.com/apimediaru/postcss-px-to-viewport",
+  "bugs": "https://github.com/evrone/postcss-px-to-viewport/issues",
+  "homepage": "https://github.com/evrone/postcss-px-to-viewport",
   "main": "index.js",
   "keywords": [
     "css",
