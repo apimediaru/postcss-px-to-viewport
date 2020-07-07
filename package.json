@@ -1,7 +1,7 @@
 {
-  "name": "postcss-px-to-viewport",
+  "name": "@apimediaru/postcss-px-to-viewport",
   "description": "A CSS post-processor that converts px to viewport units (vw, vh, vmin, vmax).",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "author": "API Media <it@apimedia.ru>",
   "license": "MIT",
   "repository": {
@@ -25,14 +25,16 @@
     "postcss-plugin"
   ],
   "scripts": {
-    "test": "jest spec/*.spec.js"
+    "test": "jest spec/*.spec.js",
+    "release": "standard-version && npm publish"
   },
   "dependencies": {
     "object-assign": ">=4.0.1"
   },
   "devDependencies": {
     "jest": "^25.4.0",
-    "postcss": ">=5.0.2"
+    "postcss": ">=5.0.2",
+    "standard-version": "latest"
   },
   "peerDependencies": {
     "postcss": ">=5.0.2"
